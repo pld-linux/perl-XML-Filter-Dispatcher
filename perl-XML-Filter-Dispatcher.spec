@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	Filter-Dispatcher
-Summary:	XML::Filter::Dispatcher - Path based event dispatching with DOM support
-#Summary(pl):	
+Summary:	XML::Filter::Dispatcher - path based event dispatching with DOM support
+Summary(pl):	XML::Filter::Dispatcher - koordynacja zdarzeñ w oparciu o ¶cie¿kê ze wsparciem dla DOM
 Name:		perl-XML-Filter-Dispatcher
 Version:	0.52
 Release:	1
@@ -28,21 +28,21 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-B<WARNING>: Beta code alert.
+WARNING: Beta code alert.
 
 A SAX2 filter that dispatches SAX events based on "EventPath" patterns
-as the SAX events arrive.  The SAX events are not buffered or converted
-to an in-memory document representation like a DOM tree.  This provides
-for low lag operation because the actions associated with each pattern
-are executed as soon as possible, usually in an element's
-C<start_element()> event method.
+as the SAX events arrive.  The SAX events are not buffered or
+converted to an in-memory document representation like a DOM tree.
+This provides for low lag operation because the actions associated
+with each pattern are executed as soon as possible, usually in an
+element's start_element() event method.
 
-This differs from traditional XML pattern matching tools like
-XPath and XSLT (which is XPath-based) which require the entire
-document to be built in memory (as a "DOM tree") before queries can be
-executed.  In SAX terms, this means that they have to build a DOM tree
-from SAX events and delay pattern matching until the C<end_document()>
-event method is called.
+This differs from traditional XML pattern matching tools like XPath
+and XSLT (which is XPath-based) which require the entire document to
+be built in memory (as a "DOM tree") before queries can be executed.
+In SAX terms, this means that they have to build a DOM tree from SAX
+events and delay pattern matching until the end_document() event
+method is called.
 
 # %description -l pl
 # TODO
