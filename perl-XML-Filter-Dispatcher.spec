@@ -31,7 +31,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 WARNING: Beta code alert.
 
 A SAX2 filter that dispatches SAX events based on "EventPath" patterns
-as the SAX events arrive.  The SAX events are not buffered or
+as the SAX events arrive. The SAX events are not buffered or
 converted to an in-memory document representation like a DOM tree.
 This provides for low lag operation because the actions associated
 with each pattern are executed as soon as possible, usually in an
