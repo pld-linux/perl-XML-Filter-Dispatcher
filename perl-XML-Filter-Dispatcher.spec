@@ -44,8 +44,22 @@ In SAX terms, this means that they have to build a DOM tree from SAX
 events and delay pattern matching until the end_document() event
 method is called.
 
-# %description -l pl
-# TODO
+%description -l pl
+UWAGA: kod beta.
+
+Filtr SAX2 koordynuje zdarzenia SAX oparte na wzorcach "EventPath" w
+miarê nap³ywu zdarzeñ SAX. Zdarzenia SAX nie s± buforowane ani
+konwertowane do reprezentacji dokumentów w pamiêci w rodzaju drzewa
+DOM. Daje to dzia³anie z ma³ymi opó¼nieniami, poniewa¿ akcje powi±zane
+z ka¿dym wzorcem s± wykonywane tak szybko jak to mo¿liwe, zazwyczaj
+w metodzie zdarzenia elementu start_element().
+
+Ró¿ni siê to od tradycyjnych narzêdzi dopasowuj±cych wzorce XML jak
+XPath czy XSLT (które jest oparte na XPath), wymagaj±cych zbudowania
+w pamiêci ca³ego dokumentu (jako "drzewa DOM") przed wykonywaniem
+zapytañ. W terminologii SAX oznacza to, ¿e musz± zbudowaæ drzewo DOM
+ze zdarzeñ SAX i opó¼niæ dopasowywanie wzorców do wykonania metody
+zdarzenia end_document().
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -69,6 +83,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{perl_vendorlib}/%{pdir}/*/*
+%{perl_vendorlib}/XML/*/*
 %{_mandir}/man3/*
 %{_mandir}/man1/*
