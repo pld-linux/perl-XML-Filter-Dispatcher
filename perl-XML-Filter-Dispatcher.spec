@@ -3,8 +3,8 @@
 %bcond_with	tests		# perform "make test" (last will fail, bug in test script)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Filter-Dispatcher
+%define		pdir	XML
+%define		pnam	Filter-Dispatcher
 Summary:	XML::Filter::Dispatcher - path based event dispatching with DOM support
 Summary(pl):	XML::Filter::Dispatcher - koordynacja zdarzeñ w oparciu o ¶cie¿kê ze wsparciem dla DOM
 Name:		perl-XML-Filter-Dispatcher
