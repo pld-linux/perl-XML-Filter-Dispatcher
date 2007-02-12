@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Filter-Dispatcher
 Summary:	XML::Filter::Dispatcher - path based event dispatching with DOM support
-Summary(pl):	XML::Filter::Dispatcher - koordynacja zdarzeñ w oparciu o ¶cie¿kê ze wsparciem dla DOM
+Summary(pl.UTF-8):   XML::Filter::Dispatcher - koordynacja zdarzeÅ„ w oparciu o Å›cieÅ¼kÄ™ ze wsparciem dla DOM
 Name:		perl-XML-Filter-Dispatcher
 Version:	0.52
 Release:	1
@@ -44,21 +44,21 @@ In SAX terms, this means that they have to build a DOM tree from SAX
 events and delay pattern matching until the end_document() event
 method is called.
 
-%description -l pl
+%description -l pl.UTF-8
 UWAGA: kod beta.
 
 Filtr SAX2 koordynuje zdarzenia SAX oparte na wzorcach "EventPath" w
-miarê nap³ywu zdarzeñ SAX. Zdarzenia SAX nie s± buforowane ani
-konwertowane do reprezentacji dokumentów w pamiêci w rodzaju drzewa
-DOM. Daje to dzia³anie z ma³ymi opó¼nieniami, poniewa¿ akcje powi±zane
-z ka¿dym wzorcem s± wykonywane tak szybko jak to mo¿liwe, zazwyczaj
+miarÄ™ napÅ‚ywu zdarzeÅ„ SAX. Zdarzenia SAX nie sÄ… buforowane ani
+konwertowane do reprezentacji dokumentÃ³w w pamiÄ™ci w rodzaju drzewa
+DOM. Daje to dziaÅ‚anie z maÅ‚ymi opÃ³Åºnieniami, poniewaÅ¼ akcje powiÄ…zane
+z kaÅ¼dym wzorcem sÄ… wykonywane tak szybko jak to moÅ¼liwe, zazwyczaj
 w metodzie zdarzenia elementu start_element().
 
-Ró¿ni siê to od tradycyjnych narzêdzi dopasowuj±cych wzorce XML jak
-XPath czy XSLT (które jest oparte na XPath), wymagaj±cych zbudowania
-w pamiêci ca³ego dokumentu (jako "drzewa DOM") przed wykonywaniem
-zapytañ. W terminologii SAX oznacza to, ¿e musz± zbudowaæ drzewo DOM
-ze zdarzeñ SAX i opó¼niæ dopasowywanie wzorców do wykonania metody
+RÃ³Å¼ni siÄ™ to od tradycyjnych narzÄ™dzi dopasowujÄ…cych wzorce XML jak
+XPath czy XSLT (ktÃ³re jest oparte na XPath), wymagajÄ…cych zbudowania
+w pamiÄ™ci caÅ‚ego dokumentu (jako "drzewa DOM") przed wykonywaniem
+zapytaÅ„. W terminologii SAX oznacza to, Å¼e muszÄ… zbudowaÄ‡ drzewo DOM
+ze zdarzeÅ„ SAX i opÃ³ÅºniÄ‡ dopasowywanie wzorcÃ³w do wykonania metody
 zdarzenia end_document().
 
 %prep
