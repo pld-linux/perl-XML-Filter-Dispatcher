@@ -9,7 +9,7 @@ Summary:	XML::Filter::Dispatcher - path based event dispatching with DOM support
 Summary(pl.UTF-8):	XML::Filter::Dispatcher - koordynacja zdarzeń w oparciu o ścieżkę ze wsparciem dla DOM
 Name:		perl-XML-Filter-Dispatcher
 Version:	0.52
-Release:	1
+Release:	2
 # GPL||Artistic and same as perl for XML::Filter::Dispatcher::Parser
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
